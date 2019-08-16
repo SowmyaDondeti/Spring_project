@@ -3,7 +3,6 @@ package org.launchcode.projectcycle.springproject.controllers;
 import org.launchcode.projectcycle.springproject.entity.MenuEntity;
 import org.launchcode.projectcycle.springproject.models.Menu;
 import org.launchcode.projectcycle.springproject.repository.MenuRepository;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.transaction.Transactional;
@@ -45,7 +44,6 @@ public class MenuController {
     }
 
     private Menu toMenu(MenuEntity menuEntity) {
-
         return Menu.builder()
                 .id(menuEntity.getId())
                 .name(menuEntity.getName())
